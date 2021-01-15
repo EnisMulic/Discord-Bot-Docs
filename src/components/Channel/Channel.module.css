@@ -1,0 +1,11 @@
+.Channel {
+    color: var(--greyple);
+    background-color: var(--dark-but-not-black);
+    padding: 0.2rem;
+    width: 150px;
+}
+
+.Channel:hover {
+    color: var(--white);
+    background-color: var(--dark-but-not-black-2);
+}
