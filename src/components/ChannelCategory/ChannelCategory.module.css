@@ -1,0 +1,17 @@
+.ChannelCategory {
+    padding: 0.5rem;
+    background-color: var(--dark-but-not-black);
+    width: 165px;
+}
+
+.ChannelCategory h5 {
+    color: var(--greyple);
+}
+
+.ChannelCategory h5:hover {
+    color: var(--white);
+}
+
+.ChannelCategory * {
+    margin: 2px;
+}

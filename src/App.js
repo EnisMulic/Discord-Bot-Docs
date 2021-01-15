@@ -1,15 +1,16 @@
 import React from "react"
 
-import Channel from "./components/Channel"
-
 import './App.css';
+import ChannelCategory from "./components/ChannelCategory";
 
 
 const App = () => {
   const channels = ["Channel 1", "Channel 2", "Channel 3"];
   return (
     <div>
-      {channels.map((channel, index) => <Channel name={channel} key={index}/>)}
+      <ChannelCategory channels={channels} name={"Test"}/>
+      <ChannelCategory channels={channels} name={"Test"}/>
+      <ChannelCategory channels={channels} name={"Test"}/>
     </div>
   );
 }
