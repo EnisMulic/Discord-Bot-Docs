@@ -1,0 +1,13 @@
+.User {
+    padding: 0.5rem;
+    width: 150px;
+}
+
+.User h4 {
+    display: inline;
+    margin: 0;
+}
+
+.User:hover {
+    background-color: #34373c;
+}

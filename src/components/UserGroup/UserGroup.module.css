@@ -1,0 +1,8 @@
+.UserGroup {
+    padding: 0.5rem;
+    color: var(--greyple);
+}
+
+.UserGroup h5 {
+    margin-bottom: 2px;
+}
