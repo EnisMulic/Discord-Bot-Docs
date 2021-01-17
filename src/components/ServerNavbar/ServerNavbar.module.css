@@ -1,0 +1,6 @@
+.ServerNavbar {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: var(--not-quite-black);
+}

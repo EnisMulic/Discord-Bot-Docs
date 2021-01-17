@@ -1,0 +1,23 @@
+.ServerIcon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--dark-but-not-black);
+    border-radius: 50%;
+    margin: 0.2rem 0.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServerIcon:hover,
+.ServerIcon:active {
+    border-radius: 40%;
+}
+
+.ServerIcon img {
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    transform: scale(0.9);
+}
