@@ -12,6 +12,7 @@ const ChannelNavbar = () => {
             <ChannelCategory channels={channels} name={'Test'} />
             <ChannelCategory channels={channels} name={'Test'} />
             <ChannelCategory channels={channels} name={'Test'} />
+            <ChannelCategory channels={channels} name={'Test'} />
         </div>
     );
 };

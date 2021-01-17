@@ -1,15 +1,19 @@
 import React from 'react';
 
 import style from './App.module.css';
-import ChannelCategory from './components/ChannelCategory';
+
+import ChannelNavbar from './components/ChannelNavbar';
+import Chat from './components/Chat';
+import { ServerNavbar } from './components/ServerNavbar';
+import UserNavbar from './components/UserNavbar';
 
 const App = () => {
-    const channels = ['Channel 1', 'Channel 2', 'Channel 3'];
     return (
         <div className={style.App}>
-            <ChannelCategory channels={channels} name={'Test'} />
-            <ChannelCategory channels={channels} name={'Test'} />
-            <ChannelCategory channels={channels} name={'Test'} />
+            <ServerNavbar />
+            <ChannelNavbar />
+            <Chat />
+            <UserNavbar />
         </div>
     );
 };
