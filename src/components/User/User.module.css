@@ -1,11 +1,12 @@
 .User {
-    padding: 0.5rem;
-    width: 150px;
+    padding: 0.1rem;
+    width: 90%;
+    display: flex;
 }
 
 .User h4 {
     display: inline;
-    margin: 0;
+    margin: auto 0;
 }
 
 .User:hover {

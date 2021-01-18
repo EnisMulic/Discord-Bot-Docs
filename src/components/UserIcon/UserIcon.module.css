@@ -1,0 +1,18 @@
+.UserIcon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0.2rem 0.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserIcon img {
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    transform: scale(0.9);
+}
