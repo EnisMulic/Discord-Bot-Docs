@@ -1,0 +1,28 @@
+.Message {
+    height: inherit;
+    width: 99%;
+    display: flex;
+    margin: 5px 0;
+}
+
+.Icon {
+    margin-left: 2%;
+}
+
+.Message:hover {
+    background-color: #32353b;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Message h4 {
+    margin: 0;
+}
+
+.Message p {
+    margin: 0;
+    color: white;
+}
