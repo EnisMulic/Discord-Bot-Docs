@@ -1,3 +1,4 @@
 .ChannelNavbar {
     height: 100%;
+    background: var(--dark-but-not-black);
 }

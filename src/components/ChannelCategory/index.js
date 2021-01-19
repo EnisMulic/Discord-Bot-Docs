@@ -1,13 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import style from './ChannelCategory.module.css';
 import Channel from '../Channel';
+
+import { ReactComponent as DownArrow } from '../../assets/down-arrow.svg';
+
+import style from './ChannelCategory.module.css';
 
 const ChannelCategory = (props) => {
     return (
         <div className={style.ChannelCategory}>
-            <h5>{props.name}</h5>
+            <div className={style.Header}>
+                <DownArrow />
+                <p>{props.name}</p>
+            </div>
             {props.channels.map((channel, index) => {
                 return <Channel name={channel} key={index} />;
             })}

@@ -2,16 +2,30 @@
     padding: 0.5rem;
     background-color: var(--dark-but-not-black);
     width: 165px;
+    cursor: pointer;
+    margin: 10px auto;
 }
 
-.ChannelCategory h5 {
+.ChannelCategory div {
     color: var(--greyple);
-}
-
-.ChannelCategory h5:hover {
-    color: var(--white);
+    display: flex;
 }
 
 .ChannelCategory * {
     margin: 2px;
+}
+
+.Header {
+    font-size: 12px;
+    position: relative;
+    left: -5px;
+}
+
+.Header svg {
+    width: 12px;
+    height: 12px;
+}
+
+.Header:hover {
+    color: var(--white);
 }

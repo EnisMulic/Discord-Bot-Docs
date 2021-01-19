@@ -3,6 +3,12 @@
     background-color: var(--dark-but-not-black);
     padding: 0.2rem;
     width: 150px;
+    display: flex;
+    margin: auto 5px;
+}
+
+.Channel p {
+    margin: auto 0;
 }
 
 .Channel:hover {
