@@ -4,3 +4,24 @@
     gap: 2px;
     background-color: var(--not-quite-black);
 }
+
+.Home {
+    color: #ffffff;
+}
+
+.Server {
+    color: #43b581;
+}
+
+.Break {
+    display: flex;
+    margin: 0 0 8px;
+    justify-content: center;
+}
+
+.Break div {
+    height: 2px;
+    width: 32px;
+    border-radius: 1px;
+    background-color: #2d2f32;
+}
