@@ -15,7 +15,7 @@
 
 .Break {
     display: flex;
-    margin: 0 0 8px;
+    margin: 8px 0 8px;
     justify-content: center;
 }
 
