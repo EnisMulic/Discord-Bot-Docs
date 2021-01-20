@@ -17,13 +17,13 @@ const App = () => {
 
             <Switch>
                 <Route path="/" exact>
-                    <Server channels={channels1} />
+                    <Server channels={channels1} name="Server 1" />
                 </Route>
                 <Route path="/server2">
-                    <Server channels={channels2} />
+                    <Server channels={channels2} name="Server 2" />
                 </Route>
                 <Route path="/server3">
-                    <Server channels={channels3} />
+                    <Server channels={channels3} name="Server 3" />
                 </Route>
             </Switch>
         </div>

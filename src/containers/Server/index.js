@@ -8,7 +8,7 @@ import UserNavbar from '../../components/UserNavbar';
 const Server = (props) => {
     return (
         <>
-            <ChannelNavbar channels={props.channels} />
+            <ChannelNavbar channels={props.channels} serverName={props.name} />
             <Chat />
             <UserNavbar />
         </>
