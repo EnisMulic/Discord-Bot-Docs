@@ -1,0 +1,30 @@
+.Toolbar {
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+    color: #b9bbbe;
+}
+
+.SearchBar {
+    width: 114px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #202225;
+    display: flex;
+    padding: 2px;
+    color: #dcddde;
+}
+
+.SearchBar > * {
+    margin: auto 4px;
+    font-size: 13px;
+}
+
+.SearchBar svg {
+    width: 18px;
+    height: 18px;
+}
+
+.Spacer {
+    flex: 1;
+}

@@ -5,6 +5,7 @@ import UserNavbar from '../../components/UserNavbar';
 import { ReactComponent as ChannelIcon } from '../../assets/channel-icon.svg';
 
 import style from './Channel.module.css';
+import Toolbar from '../../components/Toolbar';
 
 const Channel = (props) => {
     return (
@@ -12,6 +13,8 @@ const Channel = (props) => {
             <div className={style.Header}>
                 <ChannelIcon />
                 <h5>Test</h5>
+                <div className={style.Spacer} />
+                <Toolbar />
             </div>
             <div className={style.Body}>
                 <Chat />

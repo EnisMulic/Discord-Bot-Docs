@@ -18,7 +18,7 @@
     margin: 0;
 }
 
-.Header svg {
+.Header > svg {
     margin: 10px;
     color: var(--greyple);
 }
@@ -26,4 +26,8 @@
 .Body {
     display: flex;
     height: 100%;
+}
+
+.Spacer {
+    flex: 1;
 }
