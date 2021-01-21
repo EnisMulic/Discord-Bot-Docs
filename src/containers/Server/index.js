@@ -2,15 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ChannelNavbar from '../../components/ChannelNavbar';
-import Chat from '../../components/Chat';
-import UserNavbar from '../../components/UserNavbar';
+import Channel from '../Channel';
 
 const Server = (props) => {
     return (
         <>
             <ChannelNavbar channels={props.channels} serverName={props.name} />
-            <Chat />
-            <UserNavbar />
+            <Channel />
         </>
     );
 };

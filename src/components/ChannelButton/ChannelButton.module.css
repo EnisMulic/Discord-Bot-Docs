@@ -1,4 +1,4 @@
-.Channel {
+.ChannelButton {
     color: var(--greyple);
     background-color: var(--dark-but-not-black);
     padding: 0.2rem;
@@ -7,11 +7,11 @@
     margin: auto 5px;
 }
 
-.Channel p {
+.ChannelButton p {
     margin: auto 0;
 }
 
-.Channel:hover {
+.ChannelButton:hover {
     color: var(--white);
     background-color: var(--dark-but-not-black-2);
 }

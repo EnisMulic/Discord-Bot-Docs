@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Channel from '../Channel';
+import ChannelButton from '../ChannelButton';
 
 import { ReactComponent as DownArrow } from '../../assets/down-arrow.svg';
 
@@ -15,7 +15,7 @@ const ChannelCategory = (props) => {
                 <p>{props.name}</p>
             </div>
             {props.channels.map((channel, index) => {
-                return <Channel name={channel} key={index} />;
+                return <ChannelButton name={channel} key={index} />;
             })}
         </div>
     );

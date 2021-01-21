@@ -1,0 +1,29 @@
+.Channel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Header {
+    height: 48px;
+    background-color: #36393f;
+    color: white;
+    display: flex;
+    border-bottom: 1px solid #202225;
+    align-items: center;
+    padding: 1.5px;
+}
+
+.Header h5 {
+    margin: 0;
+}
+
+.Header svg {
+    margin: 10px;
+    color: var(--greyple);
+}
+
+.Body {
+    display: flex;
+    height: 100%;
+}

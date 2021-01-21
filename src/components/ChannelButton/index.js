@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import style from './Channel.module.css';
+import style from './ChannelButton.module.css';
 import { ReactComponent as ChannelIcon } from '../../assets/channel-icon.svg';
 
-const Channel = (props) => {
+const ChannelButton = (props) => {
     return (
-        <div className={style.Channel}>
+        <div className={style.ChannelButton}>
             <ChannelIcon />
             <p>{props.name}</p>
         </div>
     );
 };
 
-Channel.propTypes = {
+ChannelButton.propTypes = {
     name: PropTypes.string.isRequired,
 };
 
-export default Channel;
+export default ChannelButton;
