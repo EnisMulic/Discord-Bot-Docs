@@ -17,7 +17,7 @@ const Message = (props) => {
                         color: props.color,
                     }}
                 >
-                    {props.name}
+                    <strong>{props.name}</strong>
                 </h4>
                 <p>{props.content}</p>
             </div>

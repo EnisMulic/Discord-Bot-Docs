@@ -8,12 +8,13 @@ const User = (props) => {
     return (
         <div className={style.User}>
             <UserIcon />
+
             <h4
                 style={{
                     color: props.color,
                 }}
             >
-                {props.name}
+                <strong>{props.name}</strong>
             </h4>
         </div>
     );
