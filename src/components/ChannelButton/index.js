@@ -8,7 +8,7 @@ const ChannelButton = (props) => {
     return (
         <div className={style.ChannelButton}>
             <ChannelIcon />
-            <p>{props.name}</p>
+            <p>{props.name.replaceAll(' ', '-').toLowerCase()}</p>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 
 import style from './App.module.css';
 
@@ -14,9 +14,8 @@ const App = () => {
     return (
         <div className={style.App}>
             <ServerNavbar />
-
             <Switch>
-                <Route path="/" exact>
+                <Route path="/server1">
                     <Server channels={channels1} name="Server 1" />
                 </Route>
                 <Route path="/server2">
@@ -25,6 +24,7 @@ const App = () => {
                 <Route path="/server3">
                     <Server channels={channels3} name="Server 3" />
                 </Route>
+                <Redirect from="/" to="/server1" />
             </Switch>
         </div>
     );

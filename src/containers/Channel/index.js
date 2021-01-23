@@ -12,7 +12,7 @@ const Channel = (props) => {
         <div className={style.Channel}>
             <div className={style.Header}>
                 <ChannelIcon />
-                <h5>Test</h5>
+                <h5>{props.name.replaceAll(' ', '-').toLowerCase()}</h5>
                 <div className={style.Spacer} />
                 <Toolbar />
             </div>
@@ -24,6 +24,8 @@ const Channel = (props) => {
     );
 };
 
-Channel.propTypes = {};
+Channel.propTypes = {
+    name: PropTypes.string.isRequired,
+};
 
 export default Channel;
