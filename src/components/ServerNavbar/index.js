@@ -5,21 +5,21 @@ import style from './ServerNavbar.module.css';
 
 import { ReactComponent as AddServer } from '../../assets/circle-plus.svg';
 import { ReactComponent as DiscoverServer } from '../../assets/discover.svg';
-import { ReactComponent as Discover } from '../../assets/discord.svg';
+import { ReactComponent as Home } from '../../assets/discord.svg';
 import { NavLink } from 'react-router-dom';
 
 export const ServerNavbar = () => {
     return (
         <div className={style.ServerNavbar}>
             <ServerIcon name="Home">
-                <Discover className={style.Home} />
+                <Home className={style.Home} />
             </ServerIcon>
 
             <div className={style.Break}>
                 <div></div>
             </div>
 
-            <NavLink to="/" exact>
+            <NavLink to="/server1">
                 <ServerIcon name="Server 1" icon="discord-logo.png" />
             </NavLink>
             <NavLink to="/server2">

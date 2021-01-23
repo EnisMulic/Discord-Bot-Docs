@@ -15,6 +15,16 @@
     margin: 2px;
 }
 
+.ChannelCategory a {
+    text-decoration: none;
+}
+
+.Channel {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .Header {
     font-size: 12px;
     position: relative;

@@ -1,7 +1,7 @@
 .ChannelButton {
     color: var(--greyple);
     background-color: var(--dark-but-not-black);
-    padding: 0.2rem;
+    padding: 0;
     width: 150px;
     display: flex;
     margin: auto 5px;
