@@ -1,4 +1,5 @@
 .UserNavbar {
     width: 24%;
     background-color: #2f3136;
+    overflow: auto;
 }

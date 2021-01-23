@@ -11,10 +11,12 @@ const ChannelNavbar = (props) => {
             <div className={style.Header}>
                 <h4>{props.serverName}</h4>
             </div>
-            <ChannelCategory channels={props.channels} name={'Test'} />
-            <ChannelCategory channels={props.channels} name={'Test'} />
-            <ChannelCategory channels={props.channels} name={'Test'} />
-            <ChannelCategory channels={props.channels} name={'Test'} />
+            <div className={style.Categories}>
+                <ChannelCategory channels={props.channels} name={'Test'} />
+                <ChannelCategory channels={props.channels} name={'Test'} />
+                <ChannelCategory channels={props.channels} name={'Test'} />
+                <ChannelCategory channels={props.channels} name={'Test'} />
+            </div>
         </div>
     );
 };

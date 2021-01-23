@@ -3,6 +3,12 @@
     flex-direction: column;
     gap: 2px;
     background-color: var(--not-quite-black);
+    height: 100%;
+}
+
+.Content {
+    overflow: auto;
+    box-sizing: content-box;
 }
 
 .Home {

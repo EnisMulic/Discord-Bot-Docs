@@ -9,6 +9,12 @@ const UserNavbar = () => {
     return (
         <div className={style.UserNavbar}>
             <UserGroup name="Developer" users={users} color="#6a0dad" />
+            <UserGroup name="Developer" users={users} color="#6a0dad" />
+            <UserGroup name="Developer" users={users} color="#6a0dad" />
+            <UserGroup name="Developer" users={users} color="#6a0dad" />
+            <UserGroup name="Developer" users={users} color="#6a0dad" />
+            <UserGroup name="Developer" users={users} color="#6a0dad" />
+            <UserGroup name="Developer" users={users} color="#6a0dad" />
         </div>
     );
 };

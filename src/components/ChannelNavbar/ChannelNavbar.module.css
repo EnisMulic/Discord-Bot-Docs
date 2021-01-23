@@ -14,3 +14,25 @@
 .Header h4 {
     margin: 7%;
 }
+
+.Categories {
+    height: calc(100% - 48px);
+    overflow-y: scroll;
+    margin-right: 3px;
+}
+
+/* width */
+.Categories::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.Categories::-webkit-scrollbar-track:hover {
+    background: #2f3136;
+}
+
+/* Handle on hover */
+.Categories::-webkit-scrollbar-thumb:hover {
+    background: #202225;
+    border-radius: 8px;
+}

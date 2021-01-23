@@ -10,3 +10,26 @@
 .Spacer {
     flex: 1;
 }
+
+.Messages {
+    overflow-y: scroll;
+    margin-right: 5px;
+}
+
+/* Width */
+.Messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.Messages::-webkit-scrollbar-track {
+    background: #2e3338;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+.Messages::-webkit-scrollbar-thumb,
+.Messages::-webkit-scrollbar-thumb:hover {
+    background: #202225;
+    border-radius: 8px;
+}

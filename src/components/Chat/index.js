@@ -5,25 +5,24 @@ import MessageBar from '../MessageBar';
 import style from './Chat.module.css';
 
 const Chat = () => {
+    const messages = new Array(20);
+    for (let i = 0; i < 20; i++) {
+        messages[i] = 'Test';
+    }
+
     return (
         <div className={style.Chat}>
             <div className={style.Spacer} />
             <div className={style.Messages}>
-                <Message
-                    content="Test Test Test Test"
-                    name="User 1"
-                    color="#6a0dad"
-                />
-                <Message
-                    content="Test Test Test Test"
-                    name="User 2"
-                    color="#6a0dad"
-                />
-                <Message
-                    content="Test Test Test Test"
-                    name="User 3"
-                    color="#6a0dad"
-                />
+                {messages.map((i) => {
+                    return (
+                        <Message
+                            content="Test Test Test Test"
+                            name="User 1"
+                            color="#6a0dad"
+                        />
+                    );
+                })}
             </div>
             <MessageBar />
         </div>

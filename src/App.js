@@ -13,7 +13,11 @@ const App = () => {
 
     return (
         <div className={style.App}>
-            <ServerNavbar />
+            <ServerNavbar
+                style={{
+                    overflowY: 'scroll',
+                }}
+            />
             <Switch>
                 <Route path="/server1">
                     <Server channels={channels1} name="Server 1" />
@@ -23,6 +27,15 @@ const App = () => {
                 </Route>
                 <Route path="/server3">
                     <Server channels={channels3} name="Server 3" />
+                </Route>
+                <Route path="/server4">
+                    <Server channels={channels1} name="Server 4" />
+                </Route>
+                <Route path="/server5">
+                    <Server channels={channels2} name="Server 5" />
+                </Route>
+                <Route path="/server6">
+                    <Server channels={channels3} name="Server 6" />
                 </Route>
                 <Redirect from="/" to="/server1" />
             </Switch>
