@@ -14,9 +14,10 @@ const Chat = () => {
         <div className={style.Chat}>
             <div className={style.Spacer} />
             <div className={style.Messages}>
-                {messages.map((i) => {
+                {messages.map((i, index) => {
                     return (
                         <Message
+                            key={index}
                             content="Test Test Test Test"
                             name="User 1"
                             color="#6a0dad"

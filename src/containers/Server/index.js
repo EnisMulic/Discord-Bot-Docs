@@ -20,6 +20,7 @@ const Server = (props) => {
             <Switch>
                 {props.channels.map((channel) => (
                     <Route
+                        key={channel}
                         path={`${path}/${channel
                             .replaceAll(' ', '-')
                             .toLowerCase()}`}
