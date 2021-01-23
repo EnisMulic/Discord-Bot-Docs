@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import UserIcon from '../UserIcon';
 
 import style from './Message.module.css';
-import User from '../User';
 
 const Message = (props) => {
     return (
@@ -11,7 +11,7 @@ const Message = (props) => {
             <div className={style.Icon}>
                 <UserIcon />
             </div>
-            <div className="Info">
+            <div className={style.Info}>
                 <h4
                     style={{
                         color: props.color,
@@ -19,14 +19,14 @@ const Message = (props) => {
                 >
                     <strong>{props.name}</strong>
                 </h4>
-                <p>{props.content}</p>
+                <div>{props.children}</div>
             </div>
         </div>
     );
 };
 
 Message.propTypes = {
-    content: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
 };
 
 export default Message;

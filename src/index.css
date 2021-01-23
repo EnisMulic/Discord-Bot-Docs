@@ -26,3 +26,10 @@ code {
 ::-webkit-scrollbar {
     width: 1px;
 }
+
+.hljs {
+    background: #2f3136;
+    border: 1px solid #202225;
+    border-radius: 4px;
+    width: 160%;
+}

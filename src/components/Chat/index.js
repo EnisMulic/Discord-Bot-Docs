@@ -1,4 +1,6 @@
 import React from 'react';
+import Highlight from 'react-highlight.js';
+
 import Message from '../Message';
 import MessageBar from '../MessageBar';
 
@@ -21,7 +23,11 @@ const Chat = () => {
                             content="Test Test Test Test"
                             name="User 1"
                             color="#6a0dad"
-                        />
+                        >
+                            <Highlight language={'cpp'}>
+                                {`int main()\n{\n return 0;\n}\n`}
+                            </Highlight>
+                        </Message>
                     );
                 })}
             </div>
