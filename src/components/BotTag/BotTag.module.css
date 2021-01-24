@@ -1,0 +1,25 @@
+.BotTag {
+    height: 15px;
+    padding: 0 4px;
+    margin-top: 1px;
+    border-radius: 3px;
+    background: #7289da;
+    color: #fff;
+    margin-left: 4px;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    vertical-align: top;
+    display: inline-flex;
+}
+
+.BotText {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+.BotTag svg {
+    width: 15px;
+    height: 15px;
+    margin-left: -4px;
+}

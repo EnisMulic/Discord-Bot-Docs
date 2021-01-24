@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import UserIcon from '../UserIcon';
+import BotTag from '../BotTag';
 
 import style from './Message.module.css';
 
@@ -18,7 +19,9 @@ const Message = (props) => {
                     }}
                 >
                     <strong>{props.name}</strong>
+                    {props.isBot && <BotTag />}
                 </h4>
+
                 <div>{props.children}</div>
             </div>
         </div>

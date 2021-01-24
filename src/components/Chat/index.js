@@ -23,6 +23,7 @@ const Chat = () => {
                             content="Test Test Test Test"
                             name="User 1"
                             color="#6a0dad"
+                            isBot
                         >
                             <Highlight language={'cpp'}>
                                 {`int main()\n{\n return 0;\n}\n`}

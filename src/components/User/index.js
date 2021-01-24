@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import style from './User.module.css';
 import UserIcon from '../UserIcon';
+import BotTag from '../BotTag';
 
 const User = (props) => {
     return (
@@ -16,6 +17,7 @@ const User = (props) => {
             >
                 <strong>{props.name}</strong>
             </h4>
+            {props.isBot && <BotTag isVerified />}
         </div>
     );
 };
