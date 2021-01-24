@@ -25,7 +25,7 @@ const Server = (props) => {
                             .replaceAll(' ', '-')
                             .toLowerCase()}`}
                     >
-                        <Channel name={channel} />
+                        <Channel name={channel} topic="test" />
                     </Route>
                 ))}
                 <Redirect

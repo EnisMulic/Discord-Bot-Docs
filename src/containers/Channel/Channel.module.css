@@ -16,11 +16,25 @@
 
 .Header h5 {
     margin: 0;
+    margin-right: 8px;
 }
 
 .Header > svg {
     margin: 10px;
     color: var(--greyple);
+}
+
+.Topic {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0 0 0 8px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 18px;
+    color: #b9bbbe;
 }
 
 .Body {
@@ -30,4 +44,12 @@
 
 .Spacer {
     flex: 1;
+}
+
+.Divider {
+    width: 1px;
+    height: 24px;
+    margin: 0 8px;
+    flex: 0 0 auto;
+    background: hsla(0, 0%, 100%, 0.06);
 }
