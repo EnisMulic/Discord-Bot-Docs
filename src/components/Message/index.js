@@ -6,7 +6,11 @@ import BotTag from '../BotTag';
 
 import style from './Message.module.css';
 
+import { toHTML } from 'discord-markdown';
+
 const Message = (props) => {
+    const msg = toHTML(props.content);
+
     return (
         <div className={style.Message}>
             <div className={style.Icon}>
@@ -21,8 +25,10 @@ const Message = (props) => {
                     <strong>{props.name}</strong>
                     {props.isBot && <BotTag />}
                 </h4>
-
-                <div>{props.children}</div>
+                <div
+                    className={style.ContentWrapper}
+                    dangerouslySetInnerHTML={{ __html: msg }}
+                ></div>
             </div>
         </div>
     );
