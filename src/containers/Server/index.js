@@ -14,22 +14,40 @@ import {
 const Server = (props) => {
     const { path } = useRouteMatch();
 
+    let channels = [];
+    props.categories.map((category) => {
+        channels = [...channels, ...category.channels];
+        return 0;
+    });
+
     return (
         <>
-            <ChannelNavbar channels={props.channels} serverName={props.name} />
+            <ChannelNavbar
+                categories={props.categories}
+                serverName={props.name}
+            />
             <Switch>
-                {props.channels.map((channel) => (
-                    <Route
-                        key={channel}
-                        path={`${path}/${channel
-                            .replaceAll(' ', '-')
-                            .toLowerCase()}`}
-                    >
-                        <Channel name={channel} topic="test" />
-                    </Route>
-                ))}
+                {channels.map((channel) => {
+                    const { id, name, topic, messages, user_groups } = channel;
+                    return (
+                        <Route
+                            key={id}
+                            path={`${path}/${name
+                                .replaceAll(' ', '-')
+                                .toLowerCase()}`}
+                        >
+                            <Channel
+                                name={name}
+                                topic={topic}
+                                messages={messages}
+                                user_groups={user_groups}
+                            />
+                        </Route>
+                    );
+                })}
+
                 <Redirect
-                    to={`${path}/${props.channels[0]
+                    to={`${path}/${props.categories[0].channels[0].name
                         .replaceAll(' ', '-')
                         .toLowerCase()}`}
                 />
@@ -40,7 +58,7 @@ const Server = (props) => {
 
 Server.propTypes = {
     name: PropTypes.string.isRequired,
-    channels: PropTypes.array,
+    categories: PropTypes.array,
 };
 
 export default withRouter(Server);

@@ -5,24 +5,21 @@ import MessageBar from '../MessageBar';
 
 import style from './Chat.module.css';
 
-const Chat = () => {
-    const messages = new Array(20);
-    for (let i = 0; i < 20; i++) {
-        messages[i] = 'Test';
-    }
-
+const Chat = (props) => {
     return (
         <div className={style.Chat}>
             <div className={style.Spacer} />
             <div className={style.Messages}>
-                {messages.map((i, index) => {
+                {props.messages.map((message) => {
+                    console.log(message);
+                    const { id, content, name, color, isBot } = message;
                     return (
                         <Message
-                            key={index}
-                            content="***aa*** ~~aaa~~ https://www.github.com `aaa` @here @everyone :smile::rofl:"
-                            name="User 1"
-                            color="#6a0dad"
-                            isBot
+                            key={id}
+                            content={content}
+                            name={name}
+                            color={color}
+                            isBot={isBot}
                         />
                     );
                 })}

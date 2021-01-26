@@ -23,8 +23,8 @@ const Channel = (props) => {
                 <Toolbar />
             </div>
             <div className={style.Body}>
-                <Chat />
-                <UserNavbar />
+                <Chat messages={props.messages} />
+                <UserNavbar user_groups={props.user_groups} />
             </div>
         </div>
     );

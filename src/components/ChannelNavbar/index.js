@@ -12,10 +12,16 @@ const ChannelNavbar = (props) => {
                 <h4>{props.serverName}</h4>
             </div>
             <div className={style.Categories}>
-                <ChannelCategory channels={props.channels} name={'Test'} />
-                <ChannelCategory channels={props.channels} name={'Test'} />
-                <ChannelCategory channels={props.channels} name={'Test'} />
-                <ChannelCategory channels={props.channels} name={'Test'} />
+                {props.categories.map((category) => {
+                    const { id, name, channels } = category;
+                    return (
+                        <ChannelCategory
+                            channels={channels}
+                            name={name}
+                            key={id}
+                        />
+                    );
+                })}
             </div>
         </div>
     );

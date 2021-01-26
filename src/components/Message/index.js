@@ -24,7 +24,7 @@ const Message = (props) => {
                     }}
                 >
                     <strong>{props.name}</strong>
-                    {props.isBot && <BotTag />}
+                    {props.isBot && <BotTag isVerified={props.isVerified} />}
                 </h4>
                 <div
                     className={style.ContentWrapper}

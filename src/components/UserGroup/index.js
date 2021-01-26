@@ -9,9 +9,16 @@ const UserGroup = (props) => {
     return (
         <div className={style.UserGroup}>
             <h5>{props.name + '-' + props.users.length}</h5>
-            {props.users.map((user, index) => {
+            {props.users.map((user) => {
+                const { id, name, color, isBot, isVerified } = user;
                 return (
-                    <User name={user} key={index} color={props.color} isBot />
+                    <User
+                        name={name}
+                        key={id}
+                        color={color}
+                        isBot={isBot}
+                        isVerified={isVerified}
+                    />
                 );
             })}
         </div>

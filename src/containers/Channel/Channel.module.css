@@ -5,13 +5,12 @@
 }
 
 .Header {
-    height: 48px;
+    height: 47px;
     background-color: #36393f;
     color: white;
     display: flex;
     border-bottom: 1px solid #202225;
     align-items: center;
-    padding: 1.5px;
 }
 
 .Header h5 {

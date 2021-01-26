@@ -3,18 +3,20 @@ import UserGroup from '../UserGroup';
 
 import style from './UserNavbar.module.css';
 
-const UserNavbar = () => {
-    const users = ['User 1', 'User 2', 'User 3'];
-
+const UserNavbar = (props) => {
     return (
         <div className={style.UserNavbar}>
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
-            <UserGroup name="Developer" users={users} color="#6a0dad" />
+            {props.user_groups.map((group) => {
+                const { id, name, users, color } = group;
+                return (
+                    <UserGroup
+                        key={id}
+                        name={name}
+                        users={users}
+                        color={color}
+                    />
+                );
+            })}
         </div>
     );
 };

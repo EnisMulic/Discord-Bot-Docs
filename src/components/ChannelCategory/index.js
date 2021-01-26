@@ -18,15 +18,16 @@ const ChannelCategory = (props) => {
                 <DownArrow />
                 <p>{props.name}</p>
             </div>
-            {props.channels.map((channel, index) => {
+            {props.channels.map((channel) => {
+                const { id, name } = channel;
                 return (
-                    <div className={style.Channel} key={channel + index}>
+                    <div className={style.Channel} key={id}>
                         <Link
-                            to={`${path}/${channel
+                            to={`${path}/${name
                                 .replaceAll(' ', '-')
                                 .toLowerCase()}`}
                         >
-                            <ChannelButton name={channel} />
+                            <ChannelButton name={name} />
                         </Link>
                     </div>
                 );
