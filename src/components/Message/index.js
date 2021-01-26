@@ -7,9 +7,10 @@ import BotTag from '../BotTag';
 import style from './Message.module.css';
 
 import { toHTML } from 'discord-markdown';
+import { textEmoji } from 'markdown-to-text-emoji';
 
 const Message = (props) => {
-    const msg = toHTML(props.content);
+    const msg = toHTML(textEmoji(props.content));
 
     return (
         <div className={style.Message}>

@@ -34,3 +34,9 @@ code {
     border-radius: 4px;
     width: 160%;
 }
+
+.d-mention {
+    color: #7289da;
+    background: rgba(114, 137, 218, 0.1);
+    font-weight: 400;
+}

@@ -19,7 +19,7 @@ const Chat = () => {
                     return (
                         <Message
                             key={index}
-                            content="***aa*** ~~aaa~~ https://www.github.com `aaa` @here"
+                            content="***aa*** ~~aaa~~ https://www.github.com `aaa` @here @everyone :smile::rofl:"
                             name="User 1"
                             color="#6a0dad"
                             isBot
