@@ -15,7 +15,7 @@ const User = (props) => {
                     color: props.color,
                 }}
             >
-                <strong>{props.name}</strong>
+                {props.name}
             </h4>
             {props.isBot && <BotTag isVerified />}
         </div>

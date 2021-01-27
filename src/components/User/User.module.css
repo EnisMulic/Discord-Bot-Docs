@@ -8,6 +8,7 @@
 .User h4 {
     display: inline;
     margin: auto 0;
+    font-weight: 500;
 }
 
 .User:hover {

@@ -12,8 +12,13 @@ import { textEmoji } from 'markdown-to-text-emoji';
 const Message = (props) => {
     const msg = toHTML(textEmoji(props.content));
 
+    let msgClasses = [style.Message];
+    if (msg.includes('d-user')) {
+        msgClasses.push(style.Mention);
+    }
+
     return (
-        <div className={style.Message}>
+        <div className={msgClasses.join(' ')}>
             <div className={style.Icon}>
                 <UserIcon />
             </div>
@@ -23,7 +28,7 @@ const Message = (props) => {
                         color: props.color,
                     }}
                 >
-                    <strong>{props.name}</strong>
+                    {props.name}
                     {props.isBot && <BotTag isVerified={props.isVerified} />}
                 </h4>
                 <div

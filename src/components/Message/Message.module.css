@@ -21,6 +21,7 @@
 
 .Message h4 {
     margin: 0;
+    font-weight: 500;
 }
 
 .Message p {
@@ -39,4 +40,19 @@
 .ContentWrapper a {
     color: #00b0f4;
     text-decoration: none;
+}
+
+.Mention {
+    background: rgba(250, 166, 26, 0.05);
+}
+
+.Mention:before {
+    background-color: #faa61a;
+    width: 2px;
+    content: '';
+    pointer-events: none;
+}
+
+.Mention:hover {
+    background: rgba(4, 4, 5, 0.07);
 }

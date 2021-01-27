@@ -62,14 +62,15 @@ const servers = [
                         messages: [
                             {
                                 id: uuidv4(),
-                                content: 'A message',
+                                content: 'A message @here',
                                 name: 'User 1',
                                 color: '#6a0dad',
                                 isBot: false,
                             },
                             {
                                 id: uuidv4(),
-                                content: '***__~~AAAA~~__***',
+                                content:
+                                    '***__~~AAAA~~__*** <#0567685465> @everyone',
                                 name: 'Admin',
                                 color: '#ffcc00',
                                 isBot: false,
