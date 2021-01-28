@@ -9,6 +9,7 @@
     "discord-markdown": "^2.4.1",
     "markdown-to-jsx": "^7.1.1",
     "markdown-to-text-emoji": "^1.1.0",
+    "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-highlight.js": "^1.0.7",
@@ -16,6 +17,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "simple-markdown": "^0.7.3",
+    "twemoji": "^13.0.1",
     "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },

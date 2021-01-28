@@ -10,11 +10,17 @@ import { toHTML } from 'discord-markdown';
 import { textEmoji } from 'markdown-to-text-emoji';
 
 const Message = (props) => {
-    const msg = toHTML(textEmoji(props.content));
+    const { isEmbed } = props;
 
+    let msg = null;
     let msgClasses = [style.Message];
-    if (msg.includes('d-user')) {
-        msgClasses.push(style.Mention);
+    if (isEmbed) {
+        msg = props.children;
+    } else {
+        msg = toHTML(textEmoji(props.content));
+        if (msg.includes('d-user')) {
+            msgClasses.push(style.Mention);
+        }
     }
 
     return (
@@ -31,10 +37,14 @@ const Message = (props) => {
                     {props.name}
                     {props.isBot && <BotTag isVerified={props.isVerified} />}
                 </h4>
-                <div
-                    className={style.ContentWrapper}
-                    dangerouslySetInnerHTML={{ __html: msg }}
-                ></div>
+                {!isEmbed ? (
+                    <div
+                        className={style.ContentWrapper}
+                        dangerouslySetInnerHTML={{ __html: msg }}
+                    ></div>
+                ) : (
+                    msg
+                )}
             </div>
         </div>
     );
