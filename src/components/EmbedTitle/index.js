@@ -8,7 +8,9 @@ const EmbedTitle = ({ title, url }) => {
         return null;
     }
 
-    let computed = <div className="embed-title">{parseEmbedTitle(title)}</div>;
+    let computed = (
+        <div className={'embed-title'}>{parseEmbedTitle(title)}</div>
+    );
     if (url) {
         computed = (
             <EmbedLink href={url} className="embed-title">

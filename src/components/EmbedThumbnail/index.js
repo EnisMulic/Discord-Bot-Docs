@@ -9,7 +9,7 @@ const EmbedThumbnail = ({ url }) => {
         <img
             src={url}
             role="presentation"
-            className="embed-rich-thumb"
+            className={'embed-rich-thumb'}
             style={{ maxWidth: 80, maxHeight: 80 }}
         />
     );
