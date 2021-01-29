@@ -7,4 +7,4 @@
 -   [x] Emojis in messages
 -   [ ] @User, @Role, #channel markdown parser
 -   [ ] File embeds in messages
--   [ ] Custom embeds from bots
+-   [x] Custom embeds from bots
